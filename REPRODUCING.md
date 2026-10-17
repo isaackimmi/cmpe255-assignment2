@@ -2,7 +2,7 @@
 
 The root README is intentionally empty at the owner's request.
 
-Each numbered directory contains the user's notebook copy, freshly executed code and saved outputs, study notes, a short spoken video script with screen cues, and an execution record. `manifest.json` maps each number to its title, instructor source, and user-owned Colab copy. All examples use generated or embedded data. No private datasets, credentials, GPU, or external data downloads are required. Notebook 01's two input prompts use the explicit sample `Machine learning`, printed in its outputs.
+Each numbered, descriptively named directory contains the user's notebook copy, freshly executed code and saved outputs, study notes, a short spoken video script with screen cues, and an execution record. `manifest.json` maps each number to its title, instructor source, and user-owned Colab copy. All examples use generated or embedded data. No private datasets, credentials, GPU, or external data downloads are required. Notebook 01's two input prompts use the explicit sample `Machine learning`, printed in its outputs.
 
 ## Run locally
 
