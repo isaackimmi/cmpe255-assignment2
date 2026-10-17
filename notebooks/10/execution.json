@@ -1,0 +1,31 @@
+{
+  "notebook_order": 10,
+  "code_cells": 86,
+  "executed_cells": 86,
+  "errors": [],
+  "elapsed_seconds": 22.6,
+  "adaptations": [],
+  "execution_mode": "Local Python nbclient; fresh kernel, full notebook order; original code and seeds retained.",
+  "script_spoken_word_count": 155,
+  "script_target_seconds": 70,
+  "script_target_range_seconds": [
+    65,
+    75
+  ],
+  "environment": {
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0"
+  },
+  "output_inventory": {
+    "png_outputs": 47,
+    "cells_with_output": 86
+  },
+  "all_code_cells_executed_without_error": true,
+  "source_notebook_link": "https://colab.research.google.com/drive/1EEQKLtbEm63DP3f1kt6XBz8bjOYI1NY7"
+}

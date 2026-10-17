@@ -1,0 +1,108 @@
+{
+  "order": 2,
+  "file": "notebook.ipynb",
+  "total_code_cells": 17,
+  "executed_code_cells": 17,
+  "errors": [],
+  "runner_error": null,
+  "adaptations": [
+    {
+      "cell_index": 2,
+      "change": "Set portable DejaVu Sans font so subscript digits render under the local plotting configuration; numerical code unchanged."
+    }
+  ],
+  "runtime_seconds": 3.32,
+  "status": "complete",
+  "execution_environment": "/private/tmp/cmpe255-a2-venv/bin/python",
+  "script_spoken_word_count": 152,
+  "script_estimated_seconds_at_125_wpm": 73.0,
+  "code_cell_indices": [
+    2,
+    4,
+    9,
+    11,
+    12,
+    18,
+    19,
+    23,
+    24,
+    28,
+    29,
+    31,
+    35,
+    36,
+    40,
+    43,
+    45
+  ],
+  "executed_code_cell_indices": [
+    2,
+    4,
+    9,
+    11,
+    12,
+    18,
+    19,
+    23,
+    24,
+    28,
+    29,
+    31,
+    35,
+    36,
+    40,
+    43,
+    45
+  ],
+  "static_image_outputs": 7,
+  "selected_actual_outputs": [
+    {
+      "cell_index": 9,
+      "text": "\ud83d\udcd0 Computing Derivatives\n========================================\nFunction: f(x) = x\u00b2\nAt x = 3.0:\n  f(3.0) = 9.0\n\n  Numerical derivative:  6.000000\n  Analytical derivative: 6.000000\n  Difference: 0.0000000000\n\n\u2705 They match! (tiny error is from numerical approximation)\n"
+    },
+    {
+      "cell_index": 18,
+      "text": "\u26d3\ufe0f Chain Rule Example: y = (3x + 2)\u00b2\n=============================================\nx = 2.0\ng(x) = 3x + 2 = 8.0\ny = g\u00b2 = 64.0\n\nUsing Chain Rule:\n  dg/dx = 3\n  dy/dg = 2g = 2 \u00d7 8.0 = 16.0\n  dy/dx = dy/dg \u00d7 dg/dx = 16.0 \u00d7 3 = 48.0\n\nVerify numerically: 48.0000\n\u2705 Match!\n"
+    },
+    {
+      "cell_index": 28,
+      "text": "\ud83d\ude80 Gradient Descent in Action\n==================================================\nLoss function: L(w\u2081, w\u2082) = (w\u2081 - 1)\u00b2 + (w\u2082 + 0.5)\u00b2\nTrue minimum: (1.0, -0.5)\nInitial weights: [-1.5, 1.5]\nLearning rate: 0.1\n\nOptimization path:\n  Step 0: w = [-1.5000, 1.5000], loss = 10.2500\n  Step 1: w = [-1.0000, 1.1000], loss = 6.5600\n  Step 2: w = [-0.6000, 0.7800], loss = 4.1984\n  Step 3: w = [-0.2800, 0.5240], loss = 2.6870\n  Step 4: w = [-0.0240, 0.3192], loss = 1.7197\n  Step 5: w = [0.1808, 0.1554], loss = 1.1006\n  ...\n  Step 30: w = [0.9969, -0.4975], loss = 0.000016\n\n\u2705 Converged to approximately (1.0, -0.5)!\n"
+    },
+    {
+      "cell_index": 35,
+      "text": "\ud83e\udde0 Training Neural Network with Backpropagation\n==================================================\nProblem: XOR (not linearly separable!)\nArchitecture: 2 \u2192 4 \u2192 1\nEpoch 0: Loss = 0.255675\nEpoch 1000: Loss = 0.203313\nEpoch 2000: Loss = 0.005210\nEpoch 3000: Loss = 0.001743\nEpoch 4000: Loss = 0.001005\n\nFinal predictions:\n  Input: [0 0] \u2192 Pred: 0.030 (Target: 0)\n  Input: [0 1] \u2192 Pred: 0.975 (Target: 1)\n  Input: [1 0] \u2192 Pred: 0.975 (Target: 1)\n  Input: [1 1] \u2192 Pred: 0.025 (Target: 0)\n"
+    },
+    {
+      "cell_index": 40,
+      "text": "<Figure size 1100x500 with 1 Axes>After 10 layers, the median gradient size is:\n   sigmoid, ordinary weights : 1.67e-07   (vanished)\n   sigmoid, 6x larger weights: 1.04e+01   (exploded)\n   ReLU + He initialisation  : 8.53e-01   (healthy)\n\nAt depth 25 the sigmoid gradient is 1.0e-17 of its\noriginal size \u2014 far below the precision training can even represent.\n"
+    },
+    {
+      "cell_index": 43,
+      "text": "\ud83d\udd0d Gradient Check on the trained XOR network\n==========================================================\nparameter       relative error   verdict\n----------------------------------------------------------\nW1                   5.529e-09   \u2705 correct\nb1                   6.097e-09   \u2705 correct\nW2                   1.761e-09   \u2705 correct\nb2                   5.372e-09   \u2705 correct\n----------------------------------------------------------\nworst relative error: 6.097e-09\n\n\u2705 Backpropagation and finite differences agree to ~9 decimal places.\n   The chain-rule algebra in Section 5 is provably implemented correctly.\n\nFor contrast \u2014 the same check on a gradient with a missing factor of 2:\n   relative error = 3.333e-01  \u274c  (five orders of magnitude worse)\n"
+    },
+    {
+      "cell_index": 45,
+      "text": "\ud83d\udd25 PyTorch autograd vs. our from-scratch backpropagation\n==============================================================\nloss agrees:  torch 0.0006964604   numpy 0.0006964604\n\nparameter       max |difference|\n--------------------------------------------------------------\nW1                      0.00e+00\nb1                      5.42e-20\nW2                      0.00e+00\nb2                      0.00e+00\n--------------------------------------------------------------\n\n\u2705 Identical to machine precision.\n   PyTorch did not do anything you have not now done by hand \u2014\n   it just did it automatically, for millions of parameters.\n"
+    }
+  ],
+  "reproduction": "python rerun.py using installed packages; fail-fast, fresh outputs saved, explicit current-interpreter kernel",
+  "dependencies": [
+    "nbformat",
+    "nbclient",
+    "ipykernel",
+    "numpy",
+    "matplotlib",
+    "sympy",
+    "torch"
+  ],
+  "notebook_sha256": "3190d0239d73d2103f897bfae908f6c787bb5a6ceec9c129991a078248287e21",
+  "execution_mode": "Fresh local Jupyter kernel; executed copied Colab notebook and saved its real cell outputs; no browser Run All action claimed.",
+  "source_review": "Reviewed imports and code for external actions. Standard local calculations/plots and toy model training; no external mutation calls.",
+  "optional_exercises": "Markdown extension/self-check proposals are documented but not automatically converted into new code cells.",
+  "validation": {
+    "all_nonempty_code_cells_executed": true,
+    "error_output_count": 0,
+    "script_within_135_155_words": true,
+    "outputs_are_actual_execution": true
+  }
+}

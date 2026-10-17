@@ -1,0 +1,38 @@
+{
+  "notebook_order": 11,
+  "code_cells": 85,
+  "executed_cells": 85,
+  "errors": [],
+  "elapsed_seconds": 16.13,
+  "adaptations": [
+    {
+      "cell_index": 166,
+      "reason": "Displayed figure had FigureCanvasBase without get_renderer in the local inline environment.",
+      "change": "Catch AttributeError and obtain a FigureCanvasAgg renderer, matching the notebook's own later backend-compatible renderer patterns.",
+      "preserves": "Original panel layout, overlap metric, and plotted data; all cells rerun from a fresh kernel."
+    }
+  ],
+  "execution_mode": "Local Python nbclient; fresh kernel, full notebook order; original code and seeds retained.",
+  "script_spoken_word_count": 153,
+  "script_target_seconds": 70,
+  "script_target_range_seconds": [
+    65,
+    75
+  ],
+  "environment": {
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0"
+  },
+  "output_inventory": {
+    "png_outputs": 85,
+    "cells_with_output": 85
+  },
+  "all_code_cells_executed_without_error": true,
+  "source_notebook_link": "https://colab.research.google.com/drive/17dcvVdsQS6WFsn2dBudbRA4wAAmp4vVH"
+}
