@@ -12,7 +12,7 @@
 | Foundations 4 — Calculus | [Open Colab](https://colab.research.google.com/drive/1Fpjpzgz0kAecd5LT3RCb_rko76-oo8n3) | Pending upload |
 | Intro to Calculus — Zero to Hero for ML | [Open Colab](https://colab.research.google.com/drive/1Jj0Oku9ebMf8xHDj1BWBTP6HxVcf7sqs) | Pending upload |
 | Intro to Linear Algebra — Zero to Hero for ML | [Open Colab](https://colab.research.google.com/drive/1ghaKT_k1VPmGxNlXSxpF0ICoUxqlvT9F) | [intro_to_linear_algebra_zero_to_hero_for_ml.mp4](https://youtu.be/slrePRxBG_Q) |
-| Intro to Probability — Zero to Hero for ML | [Open Colab](https://colab.research.google.com/drive/11WzNFmB5709HVHAfHehMCtNr4Ehmls86) | [intro_to_probability_zero_to_hero.mp4](https://youtu.be/FOWBTIq2QDQ) |
+| Intro to Probability — Zero to Hero for ML | [Open Colab](https://colab.research.google.com/drive/11WzNFmB5709HVHAfHehMCtNr4Ehmls86) | Pending: YouTube rejected the video as too long |
 | Intro to Statistics — Zero to Hero for ML | [Open Colab](https://colab.research.google.com/drive/1EEQKLtbEm63DP3f1kt6XBz8bjOYI1NY7) | [intro_to_statistics_zero_to_hero_for_ml.mp4](https://youtu.be/oQYORc1TL0M) |
 | Matplotlib — Zero to Hero | [Open Colab](https://colab.research.google.com/drive/17dcvVdsQS6WFsn2dBudbRA4wAAmp4vVH) | [final_matplotlib_zero_to_hero.mp4](https://youtu.be/zA71Ra8KL2Y) |
 | NumPy Foundations for Deep Learning | [Open Colab](https://colab.research.google.com/drive/1otAoNWbtyX6-Eqw_E98ekrcEKYGYuUU6) | [final_numpy_foundations_for_deep_learning.mp4](https://youtu.be/qE_0dU7W_Sg) |
